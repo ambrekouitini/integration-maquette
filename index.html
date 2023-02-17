@@ -75,14 +75,14 @@
         </div>
         <div class="ongletContainer">
             <div class="totalContainer">
-                <p>Total Balance</p>
+                <p id="firstTitle">Total Balance</p>
                 <div class="price">
                     <p>0.97894652</p>
                     <div class="etiquette">
                         <p>BTC</p>
                     </div>
                 </div>
-                <p>$40,123.56</p>
+                <p id="secondTitle">$40,123.56</p>
             </div>
             <div class="navContainer">
                 <h3 id="active">Portfolio</h3>
@@ -92,6 +92,45 @@
             </div>
         </div>
         <div class="graphContainer">
+            <div class="legendeContainer">
+                <div class="dateContainer">
+                    <div class="legende">
+                        <p>1H</p>
+                    </div>
+                    <div class="legende">
+                        <p>1D</p>
+                    </div>
+                    <div class="legende active">
+                        <p>3D</p>
+                    </div>
+                    <div class="legende">
+                        <p>1W</p>
+                    </div>
+                    <div class="legende">
+                        <p>1M</p>
+                    </div>
+                    <div class="legende">
+                        <img src="image/calendar.png" alt="icon calendar">
+                    </div>
+                </div>
+                <div class="switchContainer">
+                    <div class="brandContainer">
+                        <img src="image/bitcoinWhite.png" alt="icon bitcoin">
+                        <p>BTC</p>
+                        <img src="image/arrowDown.png" alt="">
+                    </div>
+                    <div class="arrowContainer">
+                        <img src="image/arrow.png" alt="double arrow icon">
+                    </div>
+                    <div class="brandContainer">
+                        <img src="image/bitcoinWhite.png" alt="icon bitcoin">
+                        <p>BTC</p>
+                        <img src="image/arrowDown.png" alt="icon arrow down">
+                    </div>
+                </div>
+            </div>
+
+            <canvas id="graph"></canvas>
         </div>
         <div class="transactionsContainer">
             <div class="title">
@@ -114,7 +153,7 @@
                     <h4>24h change</h4>
                     <p class="green">+1,56</p>
                 </div>
-                <div class="graphContainer">
+                <div class="waveContainer">
                     <img src="image/wavebitcoin.png" alt="graph bitcoin">
                 </div>
                 <div class="buttonContainer">
@@ -139,7 +178,7 @@
                     <h4>24h change</h4>
                     <p class="red">+1,56</p>
                 </div>
-                <div class="graphContainer">
+                <div class="waveContainer">
                     <img src="image/waveetherium.png" alt="graph Etherum">
                 </div>
                 <div class="buttonContainer">
@@ -250,5 +289,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -40,6 +40,7 @@
 }
 .main .leftCol .menuTitle h2 {
   color: black;
+  font-size: 18px;
 }
 .main .leftCol .menuTitle img {
   width: 35px;
@@ -61,6 +62,7 @@
 .main .leftCol .menuContainer .ongletContainer h3 {
   font-weight: 500;
   opacity: 0.8;
+  font-size: 16px;
 }
 .main .leftCol .menuContainer .ongletContainer .imgContainer {
   width: 35px;
@@ -72,21 +74,174 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 70%;
+  margin-top: 80%;
   justify-content: center;
   gap: 10px;
 }
+.main .leftCol .logoutContainer .imgContainer img {
+  width: 25px;
+}
 .main .leftCol .logoutContainer h3 {
   opacity: 0.8;
+  font-size: 16px;
 }
 .main .centerCol {
   width: 55%;
-  background-color: coral;
+  background-color: black;
+}
+.main .centerCol .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px;
+}
+.main .centerCol .header .searchContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 20px;
+  gap: 10px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  align-items: center;
+}
+.main .centerCol .header .searchContainer img {
+  width: 25px;
+}
+.main .centerCol .header .searchContainer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+.main .centerCol .ongletContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+  padding: 0px 20px;
+}
+.main .centerCol .ongletContainer .totalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .centerCol .ongletContainer .totalContainer #firstTitle {
+  font-weight: 900;
+  font-size: 16px;
+  opacity: 0.8;
+}
+.main .centerCol .ongletContainer .totalContainer #secondTitle {
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.7;
+}
+.main .centerCol .ongletContainer .totalContainer .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.main .centerCol .ongletContainer .totalContainer .price p {
+  font-weight: 700;
+  font-size: 20px;
+}
+.main .centerCol .ongletContainer .totalContainer .price .etiquette {
+  background: #FAFF00;
+  border-radius: 8px;
+  padding: 2%;
+}
+.main .centerCol .ongletContainer .totalContainer .price .etiquette p {
+  color: black;
+  font-size: 14px;
+}
+.main .centerCol .ongletContainer .navContainer {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #292727;
+  border-radius: 10px;
+  gap: 30px;
+  padding: 7px 15px;
+}
+.main .centerCol .ongletContainer .navContainer h3 {
+  font-size: 16px;
+}
+.main .centerCol .ongletContainer .navContainer #active {
+  background: #0D0C0C;
+  border-radius: 17px;
+  padding: 3px 13px;
+}
+.main .centerCol .graphContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(48, 53, 65, 0.67);
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 15px;
+}
+.main .centerCol .graphContainer .legendeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.main .centerCol .graphContainer .legendeContainer .dateContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.main .centerCol .graphContainer .legendeContainer .dateContainer .legende {
+  display: flex;
+  align-items: center;
+  background: #000000;
+  border-radius: 5px;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+}
+.main .centerCol .graphContainer .legendeContainer .dateContainer .legende p {
+  font-weight: 500;
+}
+.main .centerCol .graphContainer .legendeContainer .dateContainer .legende img {
+  width: 25px;
+  display: flex;
+  align-items: center;
+}
+.main .centerCol .graphContainer .legendeContainer .dateContainer .active {
+  background: white;
+}
+.main .centerCol .graphContainer .legendeContainer .dateContainer .active p {
+  color: black;
+}
+.main .centerCol .graphContainer .legendeContainer .switchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.main .centerCol .graphContainer .legendeContainer .switchContainer .brandContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #000000;
+  gap: 10px;
+  padding: 2px 5px;
+}
+.main .centerCol .graphContainer .legendeContainer .switchContainer .brandContainer p {
+  color: white;
+}
+.main .centerCol .graphContainer .legendeContainer .switchContainer .brandContainer img {
+  width: 25px;
 }
 .main .centerCol .transactionsContainer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 10px;
 }
 .main .centerCol .transactionsContainer .title {
@@ -103,6 +258,9 @@
   border-radius: 30px;
   padding: 5px 30px;
   width: 100%;
+}
+.main .centerCol .transactionsContainer .singleTransaction h4, .main .centerCol .transactionsContainer .singleTransaction p {
+  font-size: 13px;
 }
 .main .centerCol .transactionsContainer .singleTransaction .imgContainer {
   width: 50px;
@@ -131,7 +289,7 @@
 .main .centerCol .transactionsContainer .singleTransaction .changeContainer .red {
   color: #D61919;
 }
-.main .centerCol .transactionsContainer .singleTransaction .graphContainer {
+.main .centerCol .transactionsContainer .singleTransaction .waveContainer {
   width: 30%;
 }
 .main .centerCol .transactionsContainer .singleTransaction .buttonContainer .button {
@@ -152,7 +310,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 10px 50px;
+  padding: 15px 10px 30px;
 }
 .main .rightCol .transactionsContainer {
   display: flex;
