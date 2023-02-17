@@ -64,6 +64,7 @@
                     width: 35px;
                     img{
                         width: 100%;
+
                     }
                 }
             }
@@ -87,6 +88,68 @@
     .centerCol{
         width: 55%;
         background-color: coral;
+        .transactionsContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px;
+            .title{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .singleTransaction{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background: rgba(32, 35, 43, 0.7);
+                border-radius: 30px;
+                padding: 5px 30px;
+                width: 100%;
+                .imgContainer{
+                    width: 50px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .brandContainer{
+                    width: 15%;
+                }
+                .priceContainer{
+                    width: 20%;
+                    .blue{
+                        color: #1970D6;
+                    }
+                    .purple{
+                        color: #6C1182;
+                    }
+                }
+                .changeContainer{
+                    width: 20%;
+                    .green{
+                        color: #4AD619;
+                    }
+                    .red{
+                        color: #D61919;
+                    }
+                }
+                .graphContainer{
+                    width: 30%;
+                }
+                .buttonContainer{
+                    .button{
+                        background-color: #000000;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 5px 10px;
+                        font-weight: 600;
+                        font-size: 12px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 
 
@@ -95,11 +158,129 @@
 
     .rightCol{
         width: 25%;
-        background-color: red;
+        //background-color: red;
+        background-color: black;
         .userContainer{
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
+            padding: 15px 10px 50px;
+        }
+        .transactionsContainer{
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-weight: 800;
+                font-size: 18px;
+            }
+            h4{
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 16px;
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 16px;
+                opacity: 0.7;
+            }
+            .transactionContainer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                padding : 5px 15px;
+                .imgContainer{
+                    width: 50px;
+                    img{
+                        width: 100%;
+                        
+                    }
+                }
+                .textContainer{
+                    padding-right: 20px;
+                    width: 30%;
+                }
+                .priceContainer{
+                    h4{
+                        color: #4AD619;
+                    }
+                    .redPrice{
+                        color: #D61919;
+                    }
+                }
+            }
+        }
+        .assetsContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 10px;
+            h3{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            p,h4{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+            }
+            .assetContainer1{
+                padding: 10px 25px;
+                background-image: url(../image/backgroundRight.png);
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .brandContainer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    img{
+                        width: 55px;
+                    }
+                }
+                .priceContainer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    p{
+                        font-size: 22px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .assetContainer2{
+                background-image: url(../image/backgroundRight2.png);
+                border-radius: 30px;
+                padding: 10px 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .brandContainer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 5px;
+                    img{
+                        width: 60px;
+                    }
+                    h4{
+                        font-size: 16px;
+                        color: #000000;
+                    }
+                }
+                .priceContainer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    p{
+                        font-size: 22px;
+                        color: #000000;
+                    }
+                }
+            }
         }
     }
 }
