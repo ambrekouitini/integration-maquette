@@ -12,10 +12,21 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
+  background-color: #000000;
+}
+@media screen and (max-width: 700px) {
+  .main {
+    flex-direction: column;
+  }
 }
 .main .leftCol {
   width: 20%;
   background-color: black;
+}
+@media screen and (max-width: 1055px) {
+  .main .leftCol {
+    display: none;
+  }
 }
 .main .leftCol .titleContainer {
   display: flex;
@@ -89,11 +100,35 @@
   width: 55%;
   background-color: black;
 }
+@media screen and (max-width: 1055px) {
+  .main .centerCol {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main .centerCol {
+    width: 100%;
+  }
+}
 .main .centerCol .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 18px;
+}
+.main .centerCol .header .burger {
+  display: none;
+}
+@media screen and (max-width: 1055px) {
+  .main .centerCol .header .burger {
+    display: block;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .main .centerCol .header .burger img {
+    display: block;
+    width: 25px;
+  }
 }
 .main .centerCol .header .searchContainer {
   width: 50%;
@@ -121,10 +156,21 @@
   gap: 10%;
   padding: 0px 20px;
 }
+@media screen and (max-width: 1055px) {
+  .main .centerCol .ongletContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 .main .centerCol .ongletContainer .totalContainer {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+@media screen and (max-width: 1055px) {
+  .main .centerCol .ongletContainer .totalContainer {
+    align-items: center;
+  }
 }
 .main .centerCol .ongletContainer .totalContainer #firstTitle {
   font-weight: 900;
@@ -188,6 +234,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+}
+@media screen and (max-width: 1055px) {
+  .main .centerCol .graphContainer .legendeContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 .main .centerCol .graphContainer .legendeContainer .dateContainer {
   display: flex;
@@ -305,6 +357,16 @@
   width: 25%;
   background-color: black;
 }
+@media screen and (max-width: 1055px) {
+  .main .rightCol {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main .rightCol {
+    width: 100%;
+  }
+}
 .main .rightCol .userContainer {
   display: flex;
   flex-direction: row;
@@ -312,9 +374,19 @@
   justify-content: space-between;
   padding: 15px 10px 30px;
 }
+@media screen and (max-width: 700px) {
+  .main .rightCol .userContainer {
+    display: none;
+  }
+}
 .main .rightCol .transactionsContainer {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  .main .rightCol .transactionsContainer {
+    align-items: center;
+  }
 }
 .main .rightCol .transactionsContainer h3 {
   font-weight: 800;
@@ -338,6 +410,12 @@
   gap: 15px;
   padding: 5px 15px;
 }
+@media screen and (max-width: 700px) {
+  .main .rightCol .transactionsContainer .transactionContainer {
+    justify-content: center;
+    width: 100%;
+  }
+}
 .main .rightCol .transactionsContainer .transactionContainer .imgContainer {
   width: 50px;
 }
@@ -360,6 +438,11 @@
   gap: 15px;
   margin: 10px;
 }
+@media screen and (max-width: 700px) {
+  .main .rightCol .assetsContainer {
+    align-items: center;
+  }
+}
 .main .rightCol .assetsContainer h3 {
   font-weight: 700;
   font-size: 20px;
@@ -376,6 +459,11 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 700px) {
+  .main .rightCol .assetsContainer .assetContainer1 {
+    width: 60%;
+  }
 }
 .main .rightCol .assetsContainer .assetContainer1 .brandContainer {
   display: flex;
@@ -401,6 +489,11 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 700px) {
+  .main .rightCol .assetsContainer .assetContainer2 {
+    width: 60%;
+  }
 }
 .main .rightCol .assetsContainer .assetContainer2 .brandContainer {
   display: flex;

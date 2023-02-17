@@ -59,3 +59,11 @@ new Chart(graph, {
         },
     }
 });
+
+
+const menuToggle = document.querySelector('.menu-toggle');
+const rightCol = document.querySelector('.rightCol');
+
+menuToggle.addEventListener('click', function() {
+    rightCol.classList.toggle('open');
+});
